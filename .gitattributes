@@ -1,0 +1,4 @@
+Data Sience/notebooks/** linguist-vendored
+TGR-front-end/src/assets/** linguist-vendored
+*.css linguist-vendored
+*.html linguist-vendored
