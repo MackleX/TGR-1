@@ -1,0 +1,85 @@
+<section class="section pb-0 section-components ">
+  <form [formGroup]="userInputs.controls[0]" (ngSubmit)="onSubmit()">
+    <div class="py-5 bg-secondary container align-items-center shadow ">
+
+      <h3 class="h2 text-primary font-weight-bold mb-4 col-sm text-center">Please! follow the steps below</h3>
+
+      <br>
+      <br>
+
+
+      <div class="container">
+        <div class="mb-3">
+          <h4 class="text-uppercase text-primary font-weight-bold">Step1: Describe you'r product</h4>
+        </div>
+
+        <div class="row">
+
+
+          <div class="col col-lg-12">
+
+            <textarea formControlName="descriptionText" class="form-control " id="exampleFormControlTextarea1" rows="3"
+              placeholder="Write a large text here ..."></textarea>
+
+          </div>
+
+
+
+        </div>
+
+
+        <br>
+        <br>
+
+        <div class="mb-3">
+          <h4 class="text-uppercase text-primary  font-weight-bold">Step2: In which website you want to search ?</h4>
+        </div>
+
+
+
+        <div class="row">
+
+
+          <div class="col-md-3" *ngFor="let control of userInputs.controls[0].get('targetedSites').controls">
+
+            <div>
+
+
+
+
+              <div class="card d-flex">
+                <img class="card-img-top" src="{{control.getSiteImage()}}" alt="Card image cap"
+                  width="320" height="180">
+
+                <div class="card-body">
+                  <h4 class="card-title">{{control.getSiteName()}}</h4>
+                  <p class="card-text">{{control.getSiteDescription()}}</p>
+                </div>
+
+                <form class="align-self-center">
+                  <label class="custom-toggle">
+                    <input type="checkbox" [formControl]="control" [value]="control.getSiteName()">
+                    <span class="custom-toggle-slider rounded-circle"></span>
+                  </label>
+
+                </form>
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row justify-content-center">
+
+          <button type="submit" class="btn btn-lg btn-primary align-self-center"
+            [disabled]=" !(userInputs.valid && siteChoosed)">Search</button>
+        </div>
+
+      </div>
+    </div>
+  </form>
+</section>
