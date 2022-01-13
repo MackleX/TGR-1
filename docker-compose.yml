@@ -1,0 +1,66 @@
+version: '3.3'
+services:
+
+
+  discovery-service:
+    build:
+      context: ./discovery-service
+    environment:
+     - SPRING_APPLICATION_PORT=8761
+    ports:
+      - 8761:8761
+    volumes:
+        - ./discovery-service:/app
+    image: discovery-service
+
+
+  api-gateway-service:
+    build:
+      context: ./enduserproductfetcher
+    environment:
+      - SPRING_APPLICATION_PORT=9005
+      - EUREKA=discovery-service
+    ports:
+      - 9005:9005
+    volumes:
+      - ./enduserproductfetcher:/app
+    image: api-gateway-service
+
+
+  amazon-product-fetcher:
+      build:
+        context: ./amazonproductfetchermc
+      environment:
+        - SPRING_APPLICATION_PORT=9010
+        - EUREKA=discovery-service
+      ports:
+        - 9000:9000
+      volumes:
+        - ./amazonproductfetchermc:/app
+      image: amazon-product-fetcher
+
+
+  token-issuer-service:
+        build:
+          context: ./tokenissuer
+        environment:
+          - SPRING_APPLICATION_PORT=9015
+          - EUREKA=discovery-service
+        ports:
+          - 9015:9015
+        volumes:
+          - ./tokenissuer:/app
+        image: enduserproductfetcher-service
+
+
+  product-caracterstics-extractor-service:
+          build:
+            context: ./tokenissuer
+          environment:
+            - SPRING_APPLICATION_PORT=9020
+            - EUREKA=discovery-service
+          ports:
+            - 9020:9020
+          volumes:
+            - ./enduserproductfetcher:/app
+          image: enduserproductfetcher-service

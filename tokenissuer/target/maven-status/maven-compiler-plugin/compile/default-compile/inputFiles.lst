@@ -1,0 +1,15 @@
+/app/src/main/java/com/token/issuer/service/service/tokenverifier/TokenVerifier.java
+/app/src/main/java/com/token/issuer/service/service/tokenverifier/TokenVerifierBeans.java
+/app/src/main/java/com/token/issuer/service/service/tokenverifier/google/GoogleClientDependencies.java
+/app/src/main/java/com/token/issuer/service/exceptionshandling/exceptions/ApiRequestException.java
+/app/src/main/java/com/token/issuer/service/Application.java
+/app/src/main/java/com/token/issuer/service/exceptionshandling/handlers/RestExceptionHandler.java
+/app/src/main/java/com/token/issuer/service/exceptionshandling/exceptions/InvalidToken.java
+/app/src/main/java/com/token/issuer/service/model/RequestData.java
+/app/src/main/java/com/token/issuer/service/service/TokenService.java
+/app/src/main/java/com/token/issuer/service/service/tokenverifier/TokenVerifierBuilder.java
+/app/src/main/java/com/token/issuer/service/controller/TokenIssuerController.java
+/app/src/main/java/com/token/issuer/service/exceptionshandling/exceptions/ApiValidationError.java
+/app/src/main/java/com/token/issuer/service/service/tokenverifier/TokenVerifierBuilderFactory.java
+/app/src/main/java/com/token/issuer/service/service/tokenverifier/google/GoogleTokenVerifier.java
+/app/src/main/java/com/token/issuer/service/controller/JwtWrapper.java
