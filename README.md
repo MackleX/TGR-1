@@ -8,7 +8,7 @@
 </p>
 <br>
 Tech-Getgets is a school project in which we developed a <i>Cloud Native Web Application<i> based on a <b>Microservices Architecture</b> that aims to 
-
+<br>
 <br>
 
 > Recommend tech-gadgets to a user based on simple description.
@@ -27,19 +27,19 @@ We have used a stack of the most popular technologies starting with <b>Spring bo
 <h2 style="text-align:center">Know more about the project</h2>
 <span style="font-size:large; font-weight:bold">
 
-- <a href="https://github.com/MackleX/TGR-1/blob/data-science/Tech-Gadgets%20document/Rapport_Projet_WEB_JEE%20.pdf" target="_blank">Project Report</a>
+- <a href="https://github.com/MackleX/TGR-1/blob/data-science/Tech-Gadgets%20document/Rapport_Projet_WEB_JEE%20.pdf" >Project Report</a>
 
-- <a href="https://github.com/MackleX/TGR-1/blob/data-science/Tech-Gadgets%20document/Tech-Gadgets%20Presentation.pdf" target="_blank">Project Presentation</a>
+- <a href="https://github.com/MackleX/TGR-1/blob/data-science/Tech-Gadgets%20document/Tech-Gadgets%20Presentation.pdf" >Project Presentation</a>
 
-- <a href="https://www.youtube.com/watch?v=IicWeYMeNuk" target="_blank">Demo Video :</a>
+- <a href="https://www.youtube.com/watch?v=IicWeYMeNuk" >Demo Video :</a>
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=IicWeYMeNuk"><img src="https://img.youtube.com/vi/IicWeYMeNuk/0.jpg" alt="Demo Video on YouTube" target="_blank"></a>
+  <a href="https://www.youtube.com/watch?v=IicWeYMeNuk"><img src="https://img.youtube.com/vi/IicWeYMeNuk/0.jpg" alt="Demo Video on YouTube" ></a>
 </div>
 
 </span>
 <h2 style="text-align:center">Abstract</h2>
 Our WEB/JEE project is envisioned to have an impact on e-shopping , it consists on developing a web platform that allows shoppers to get recommendations for tech gadgets based on the user's description. It contains principally two types of services :
-
+<br>
 <br>
 
 &emsp;&emsp;-General Recommendation for guest.
