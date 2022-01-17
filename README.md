@@ -13,7 +13,7 @@ Tech-Getgets is a school project in which we developed a <i>Cloud Native Web App
 
 > Recommend tech-gadgets to a user based on simple description.
 
-We have used a stack of the most popular technologies starting with <b>Spring boot</b> and <b>Spring Cloud</b> for the Backend, our Frontend was made <b>Angular</b> and <b>TypeScript</b>, for the Data Science part we worked with Python and used liberaries like <b>Pandas</b>, <b>NLTK</b>, <b>Flask</b>...
+We have used a stack of the most popular technologies starting with <b>Spring boot</b> and <b>Spring Cloud</b> for the Backend, our Frontend was made <b>Angular</b> and <b>TypeScript</b>, for the Data Science part we worked with Python and used liberaries like <b>Pandas</b>, <b>NLTK</b>, a web framework for python based services <b>Flask</b> and also we did some <b>webscrapping<b> to scrap products out of e-commerce websites ...
 <br>
 
 <p align="center">
